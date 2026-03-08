@@ -8,19 +8,17 @@
 
 -   Microcontroller platforms
 
-    -   Arduino vs. Raspberry Pi Pico vs. STM 32
+    -   Arduino vs. Raspberry Pi Pico vs. STM 32 vs. PIC
 
 -   Micropython vs. C
 
 -   Software Setup
 
     -   Install Thonny + Flash Pico
+-   Electronic Basics
 
+    -   Ohms law - calculate resistor
 -   Hands-on Tutorial
-
-    -   Electronic Basics
-
-        -   Ohms law - calculate resistor
 
     -   Wire up and blink the LED
 
@@ -217,21 +215,3 @@ Sources:
 
 -   Ohms law - calculate resistor
 
-## Hands-on Tutorial
-
-
--   Wire up and blink LED
-
--   Add button control
-
--   Reaction timer - Who has the fastest reaction time!
-
--   If time allow:
-
-    -   Button interrupt
-
-    -   PWM
-
-    -   Read from photoresistor
-
-    -   Ambient light program (adjust PWM based on photoresistor value)
