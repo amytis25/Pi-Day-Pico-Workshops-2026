@@ -93,35 +93,14 @@ Sources:
 
 ## Microcontroller vs. Computers (OS systems) vs. Single Board Computers (OS systems)
 
-  ------------------------------------------------------------------------
-  **Microprocessor (MPU)** **Microcontroller      **Single Board Computer
-                           (MCU)**                (SBC)**
-  ------------------------ ---------------------- ------------------------
-  The heart of a computer  The heart of an        Microcomputer
-  system                   embedded system        
-
-  Memory and I/O           Has an external        Has an external
-  components has to be     component with an      component with an
-  connected externally     internal memory and    internal memory and I/O
-                           I/O components         components
-
-  Unable to use in compact Able to use in compact Able to use in compact
-  systems                  system                 system
-
-  Cost of the system is    Cost of the system is  Cost of the system is
-  higher                   lower                  lower
-
-  Since memory and I/O     Components are         Components are internal,
-  components are external, internal, where the    where the operation
-  each instruction goes    operation takes place  takes place internally,
-  through the external     internally, thus it's  thus it's faster
-  operation. Thus it's     faster                 
-  slower.                                         
-
-  Widely used in PC and    Widely used in small   Widely used in
-  laptops, big control     control systems        programming and small
-  systems                                         control systems
-  ------------------------------------------------------------------------
+| **Microprocessor (MPU)** | **Microcontroller (MCU)** | **Single Board Computer (SBC)** |
+|---|---|---|
+| The heart of a computer system | The heart of an embedded system | Microcomputer |
+| Memory and I/O components has to be connected externally | Has an external component with an internal memory and I/O components | Has an external component with an internal memory and I/O components |
+| Unable to use in compact systems | Able to use in compact system | Able to use in compact system |
+| Cost of the system is higher | Cost of the system is lower | Cost of the system is lower |
+| Since memory and I/O components are external, each instruction goes through the external operation. Thus it's slower. | Components are internal, where the operation takes place internally, thus it's faster | Components are internal, where the operation takes place internally, thus it's faster |
+| Widely used in PC and laptops, big control systems | Widely used in small control systems | Widely used in programming and small control systems |
 
 +-----------------+-----------------+--------------------+-------------+
 |                 | MCU →           | SBC                | Computers   |
@@ -181,59 +160,17 @@ Sources:
 
 **H extension** - means that the pins are already soldered
 
-+-----------------+-----------------+-----------------+-----------------+
-| Pico            | Pico W ← were   | Pico 2          | Pico 2 W        |
-|                 | using this      |                 |                 |
-+=================+=================+=================+=================+
-| \- RP2040       | Pico +          | Pico + improved | Pico 2 +        |
-| microcontroller |                 | performance:    |                 |
-|                 | \- 2.4 GHz      |                 | \- RP2350       |
-| \- Dual-core    | Wi-Fi           | \- dual         | microcontroller |
-| ARM Cortex-M0+  |                 | **Cortex-M33    |                 |
-|                 | \- Bluetooth    | cores** (or     | \- Wi-Fi        |
-| \- 133 MHz CPU  | support         | RISC-V cores)   | 802.11n         |
-|                 |                 |                 |                 |
-| \- 264 KB SRAM  | \- Infineon     | **- 150 MHz     | \- Bluetooth    |
-|                 | CYW43439 radio  | clock**         | 5.2             |
-| \- 2 MB flash   | chip            |                 |                 |
-|                 |                 | **- 520 KB RAM  | \- same pinout  |
-| \- 26 GPIO pins |                 | (≈2× more)**    | as previous     |
-|                 |                 |                 | Pico boards     |
-| \- ADC, PWM,    |                 | **- 4 MB        |                 |
-| I²C, SPI, UART  |                 | flash**         |                 |
-|                 |                 |                 |                 |
-|                 |                 | \- more PWM and |                 |
-|                 |                 | PIO capability  |                 |
-|                 |                 |                 |                 |
-|                 |                 | \- improved     |                 |
-|                 |                 | security        |                 |
-|                 |                 | (TrustZone)     |                 |
-+-----------------+-----------------+-----------------+-----------------+
-| \- basic        | \- IoT          |                 | \- IoT devices  |
-| embedded        |                 |                 |                 |
-| learning        | \- web servers  |                 | \- wireless     |
-|                 |                 |                 | robotics        |
-| \- robotics     | \- wireless     |                 |                 |
-|                 | sensors         |                 | \-              |
-| \- sensor       |                 |                 | cloud-connected |
-| projects        |                 |                 | sensors         |
-+-----------------+-----------------+-----------------+-----------------+
+| **Pico** | **Pico W** (were using this) | **Pico 2** | **Pico 2 W** |
+|---|---|---|---|
+| - RP2040 microcontroller<br>- Dual-core ARM Cortex-M0+<br>- 133 MHz CPU<br>- 264 KB SRAM<br>- 2 MB flash<br>- 26 GPIO pins<br>- ADC, PWM, I²C, SPI, UART | Pico +<br>- 2.4 GHz Wi-Fi<br>- Bluetooth support<br>- Infineon CYW43439 radio chip | Pico + improved performance:<br>- dual **Cortex-M33 cores** (or RISC-V cores)<br>- **150 MHz clock**<br>- **520 KB RAM (≈2× more)**<br>- **4 MB flash**<br>- more PWM and PIO capability<br>- improved security (TrustZone) | Pico 2 +<br>- RP2350 microcontroller<br>- Wi-Fi 802.11n<br>- Bluetooth 5.2<br>- same pinout as previous Pico boards |
+| - basic embedded learning<br>- robotics<br>- sensor projects | - IoT<br>- web servers<br>- wireless sensors | | - IoT devices<br>- wireless robotics<br>- cloud-connected sensors |
 
-  ---------------------------------------------------------------------------------------
-  **Board**   **MCU**   **CPU**                      **RAM**   **Flash**   **Wireless**
-  ----------- --------- ---------------------------- --------- ----------- --------------
-  Pico        RP2040    Dual ARM Cortex-M0+ \@133    264 KB    2 MB        ❌
-                        MHz                                                
-
-  Pico W      RP2040    Dual ARM Cortex-M0+ \@133    264 KB    2 MB        Wi-Fi +
-                        MHz                                                Bluetooth
-
-  Pico 2      RP2350    Dual Cortex-M33 **or**       520 KB    4 MB        ❌
-                        RISC-V \@150 MHz                                   
-
-  Pico 2 W    RP2350    Dual Cortex-M33 **or**       520 KB    4 MB        Wi-Fi +
-                        RISC-V \@150 MHz                                   Bluetooth
-  ---------------------------------------------------------------------------------------
+| **Board** | **MCU** | **CPU** | **RAM** | **Flash** | **Wireless** |
+|---|---|---|---|---|---|
+| Pico | RP2040 | Dual ARM Cortex-M0+ @ 133 MHz | 264 KB | 2 MB | ❌ |
+| Pico W | RP2040 | Dual ARM Cortex-M0+ @ 133 MHz | 264 KB | 2 MB | Wi-Fi + Bluetooth |
+| Pico 2 | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | ❌ |
+| Pico 2 W | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | Wi-Fi + Bluetooth |
 
 ![](images/pico-img.png)
 
@@ -247,28 +184,19 @@ Sources:
 
 ## Micropython vs. C
 
-  ------------------------------------------------------------------------
-  Feature         MicroPython                 C/C++ (Pico SDK)
-  --------------- --------------------------- ----------------------------
-  Ease of Use     High (Interpreted, REPL     Moderate (Requires
-                  support)                    compilation)
-
-  Setup Time      Fast (Drag & drop UF2)      Slower (CMake, Toolchains)
-
-  Performance     Sufficient for most DIY/IoT Maximum (up to 250x faster)
-
-  Control         High-level abstraction      Direct register/hardware
-                                              access
-
-  Debugging       Print statements / REPL     SWD / Debug probes / GDB
-  ------------------------------------------------------------------------
+| **Feature** | **MicroPython** | **C/C++ (Pico SDK)** |
+|---|---|---|
+| Ease of Use | High (Interpreted, REPL support) | Moderate (Requires compilation) |
+| Setup Time | Fast (Drag & drop UF2) | Slower (CMake, Toolchains) |
+| Performance | Sufficient for most DIY/IoT | Maximum (up to 250x faster) |
+| Control | High-level abstraction | Direct register/hardware access |
+| Debugging | Print statements / REPL | SWD / Debug probes / GDB |
 
 ## Software Setup
 
 ![](media/image7.png)
 
-1.  Install Thonny IDE from:
-    [[https://thonny.org/]{.underline}](https://thonny.org/)
+1.  Install Thonny IDE from: [https://thonny.org/](https://thonny.org/)
 
 2.  Open Thonny, go to tools→ options → Interpretter
 
