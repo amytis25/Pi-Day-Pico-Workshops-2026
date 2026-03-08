@@ -102,26 +102,16 @@ Sources:
 | Since memory and I/O components are external, each instruction goes through the external operation. Thus it's slower. | Components are internal, where the operation takes place internally, thus it's faster | Components are internal, where the operation takes place internally, thus it's faster |
 | Widely used in PC and laptops, big control systems | Widely used in small control systems | Widely used in programming and small control systems |
 
-+-----------------+-----------------+--------------------+-------------+
-|                 | MCU →           | SBC                | Computers   |
-|                 | bare-metal      |                    |             |
-+=================+=================+====================+=============+
-| Examples        | Arduino, ESP32, Raspberry Pi Pico, STM32 | Raspberry Pi, BeagleBone, NVIDIA Jetson Nano | Laptop, Desktop PC |
-+-----------------+-----------------+--------------------+-------------+
-| Processing      | Designed for simple, dedicated tasks. Processing capability is low but highly optimized for efficiency. | Much more powerful, capable of handling complex operations and multitasking. | Full general-purpose computing. Very high, designed for complex applications. |
-+-----------------+-----------------+--------------------+-------------+
-| Memory &        | Very limited resources, typically measured in kilobytes (KB) or a few megabytes (MB). | Offers significantly more memory and storage, often in gigabytes (GB), suitable for running full applications. | Several GB--TB + storage: SSD/HDD (hundreds of GB or TB) |
-+-----------------+-----------------+--------------------+-------------+
-| Operating       | Usually runs without an operating system or uses minimal firmware for basic control (bare-metal). | Supports full operating systems like Linux, enabling a wide range of software and tools. | Runs full OS (Windows, macOS, Linux) |
-+-----------------+-----------------+--------------------+-------------+
-| Power           | Extremely low power requirements, ideal for battery-powered or energy-sensitive devices. | Higher power draw and requires a stable power source for reliable operation. | High (tens--hundreds of W) |
-+-----------------+-----------------+--------------------+-------------+
-| Cost            | Very affordable, typically priced between £2 and £20. | More expensive, starting around £30 and going well over £100 depending on specifications. | Much more expensive |
-+-----------------+-----------------+--------------------+-------------+
-| Pros            | - Extremely low power consumption - Affordable and widely available - Great for real-time control and simple tasks | - Powerful processing and multitasking - Runs full operating systems - Ideal for networking and advanced projects | |
-+-----------------+-----------------+--------------------+-------------+
-| Cons            | - Limited processing power - No operating system - Not suitable for complex applications | - Higher power requirements - More expensive - Overkill for simple tasks | |
-+-----------------+-----------------+--------------------+-------------+
+| | **MCU → bare-metal** | **SBC** | **Computers** |
+|---|---|---|---|
+| **Examples** | Arduino, ESP32, Raspberry Pi Pico, STM32 | Raspberry Pi, BeagleBone, NVIDIA Jetson Nano | Laptop, Desktop PC |
+| **Processing** | Designed for simple, dedicated tasks. Processing capability is low but highly optimized for efficiency. | Much more powerful, capable of handling complex operations and multitasking. | Full general-purpose computing. Very high, designed for complex applications. |
+| **Memory & Storage** | Very limited resources, typically measured in kilobytes (KB) or a few megabytes (MB). | Offers significantly more memory and storage, often in gigabytes (GB), suitable for running full applications. | Several GB--TB + storage: SSD/HDD (hundreds of GB or TB) |
+| **Operating System** | Usually runs without an operating system or uses minimal firmware for basic control (bare-metal). | Supports full operating systems like Linux, enabling a wide range of software and tools. | Runs full OS (Windows, macOS, Linux) |
+| **Power** | Extremely low power requirements, ideal for battery-powered or energy-sensitive devices. | Higher power draw and requires a stable power source for reliable operation. | High (tens--hundreds of W) |
+| **Cost** | Very affordable, typically priced between £2 and £20. | More expensive, starting around £30 and going well over £100 depending on specifications. | Much more expensive |
+| **Pros** | - Extremely low power consumption<br>- Affordable and widely available<br>- Great for real-time control and simple tasks | - Powerful processing and multitasking<br>- Runs full operating systems<br>- Ideal for networking and advanced projects | |
+| **Cons** | - Limited processing power<br>- No operating system<br>- Not suitable for complex applications | - Higher power requirements<br>- More expensive<br>- Overkill for simple tasks | |
 
 Bare Metal Concept: eliminates the intermediary layers of operating systems, allowing developers to interact directly with the hardware.
 
