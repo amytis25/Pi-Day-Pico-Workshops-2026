@@ -8,11 +8,11 @@ This repository will serve as the resource center for Pico Beginner workshop hos
 4. Micropython vs. C
 5. Software Setup
 Hands-on Tutorial
-6. Electronic Basics
+6. Electronic Basics\
 **Hands on Tutorial** 
 1. blink the LED
 2. button control
-3. Reaction timer - Who has the fastest reaction time!
+3. Reaction timer - Who has the fastest reaction time!\
 **Extra (If time allows):**
 1. PWM
 2. Button interrupt
