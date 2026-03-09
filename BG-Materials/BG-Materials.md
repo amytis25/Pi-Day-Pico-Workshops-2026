@@ -182,8 +182,6 @@ Sources:
 
 ## Software Setup
 
-![](media/image7.png)
-
 1.  Install Thonny IDE from: [https://thonny.org/](https://thonny.org/)
 
 2.  Open Thonny, go to tools→ options → Interpretter
@@ -213,5 +211,22 @@ Sources:
 
 ## Electronic Basics
 
--   Ohms law - calculate resistor
+-   Ohms law : **V = I R**
+![](images/led_circuit.png)
+$R = \frac{V_s - V_f}{I_f}$
+- V_s = 3.3 V (out from Pico)
+- V_f ≈ 2 V (for LED - I just searched it up)
+- I_f ≈ 20 mA (for LED - I just searched it up)
+--> R = 65 Ohm 
+we choose closest available value (I used 100 ohms)
+
+## Pull-up and Pull-down Resistors
+- buttons with gpio
+
+## Voltage Divider
+- photoresistor reading ADC requires it
+
+Sources:
+- [https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#](https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#)
+
 
