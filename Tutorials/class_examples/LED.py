@@ -14,6 +14,7 @@ class LED:
         self.pin.value(not self.pin.value())
 
     def setPWM(self,freq_hz, duty):
+        duty = max(0, min(1, duty))
         self.pwm = machine.PWM(self.pin)
         self.pwm.freq(freq_hz)
         self.pwm.duty_u16(int(duty * 65535))
