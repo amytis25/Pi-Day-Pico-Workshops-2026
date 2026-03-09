@@ -184,8 +184,10 @@ Select appropriate version.
 ## Electronic Basics
 
 -   Ohms law : **V = I R**
-![](images/led_circuit.png)
-\$R = \frac{V_s - V_f}{I_f}$\
+![](images/led_circuit.png)\
+
+\$R = \frac{V_s - V_f}{I_f}$
+
 - $V_s$ = 3.3 V (out from Pico)
 - $V_f$ ≈ 2 V (for LED - I just searched it up)
 - $I_f$ ≈ 20 mA (for LED - I just searched it up)\
