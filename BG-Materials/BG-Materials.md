@@ -160,9 +160,7 @@ Sources:
 | Pico 2 | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | ❌ |
 | Pico 2 W | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | Wi-Fi + Bluetooth |
 
-<img src="images/pico-img.png" alt="pico/ pico w image" width="300">
-
-<img src="images/pico-2-img.png" alt="pico/ pico w image" width="350" />
+<img src="images/pico-img.png" alt="pico/ pico w image" height="200"> <img src="images/pico-2-img.png" alt="pico/ pico w image" height="200" />
 
 Sources:
 
