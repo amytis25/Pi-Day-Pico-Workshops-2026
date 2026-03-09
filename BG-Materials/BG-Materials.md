@@ -1,55 +1,25 @@
-# Outline
+# Back Ground Materials Outline
 
 -   What is a Microcontroller?
-
 -   Microcontroller vs. Computers / Single Board Computers (OS systems)
-
     -   Discuss bare-metal
-
 -   Microcontroller platforms
-
     -   Arduino vs. Raspberry Pi Pico vs. STM 32 vs. PIC
-
 -   Micropython vs. C
-
 -   Software Setup
-
     -   Install Thonny + Flash Pico
 -   Electronic Basics
+    -   Ohms law - calculate resistors needed!
 
-    -   Ohms law - calculate resistor
--   Hands-on Tutorial
-
-    -   Wire up and blink the LED
-
-    -   Add button control
-
-    -   Reaction timer - Who has the fastest reaction time!
-
-    -   If time allows:
-
-        -   Button interrupt
-
-        -   PWM
-
-        -   Read from the photoresistor
-
-        -   Ambient light program (adjust PWM based on photoresistor
-            value)
-
-# Workshop
-
-
-
-## What is a Microcontroller?
+# What is a Microcontroller?
 
 **Microcontroller/ microcontroller unit (MCU):** a small [computer](https://en.wikipedia.org/wiki/Computer) on a single [integrated circuit](https://en.wikipedia.org/wiki/Integrated_circuit), designed for embedded applications.
 
 -   Generally designed to run a single basic programme repeatedly
 
-### What are the elements of a microcontroller?
+## What are the elements of a microcontroller?
 
-![](images/key-microcontroller-components.png)
+![](images/key-microcontroller-components.png)\
 The core elements that make up a microcontroller are the central
 processing unit (CPU), memory and I/O peripherals.
 
@@ -134,16 +104,16 @@ Sources:
 
 ## Microcontroller platforms
 
--   [Arduino boards](https://www.rapidonline.com/brands/arduino?Attributes=%7B%22T3%22:%5B%22Arduino+Breakout+%26+Boards%22%5D%7D&shoppingmode=true) (ATmega series) - Popular among hobbyists and makers, Arduino boards use ATmega microcontrollers. They're easy to program, have a large community and are ideal for prototyping projects like [robotics](https://www.rapidonline.com/research-robotics), IoT devices and automation.
+-   **Arduino boards** (ATmega series) - Popular among hobbyists and makers, Arduino boards use ATmega microcontrollers. They're easy to program, have a large community and are ideal for prototyping projects like [robotics](https://www.rapidonline.com/research-robotics), IoT devices and automation.
 
--   **Raspberry Pi Pico (RP2040)** -- The Pico uses the RP2040
+-   **Raspberry Pi Pico (RP2040)** - The Pico uses the RP2040
     microcontroller developed by Raspberry Pi. It's inexpensive,
     powerful, and supports both MicroPython and C/C++. It's commonly
     used for embedded learning, robotics, and sensor-based projects.
 
--   [PIC microcontrollers](https://www.rapidonline.com/pic-microcontrollers) - Produced by Microchip Technology, PIC microcontrollers are known for their reliability and versatility. They're widely used in industrial control systems, consumer electronics and automotive applications.
+-   **PIC microcontrollers** - Produced by Microchip Technology, PIC microcontrollers are known for their reliability and versatility. They're widely used in industrial control systems, consumer electronics and automotive applications.
 
--   [STM32 series](https://www.rapidonline.com/stmicroelectronics-conrad-pcb-design-board-659563-659563) - Based on ARM Cortex cores, STM32 microcontrollers offer high performance and low power consumption. They're commonly used in advanced applications like medical devices, drones and complex embedded systems.
+-   **STM32 series** - Based on ARM Cortex cores, STM32 microcontrollers offer high performance and low power consumption. They're commonly used in advanced applications like medical devices, drones and complex embedded systems.
 
 ### Raspberry Pi Pico versions:
 
@@ -193,13 +163,16 @@ Sources:
 
 6.  Flash with Thonny
 
-![](micropython_setup_screenshots/pico_as_drive.png)
+![](micropython_setup_screenshots/pico_as_drive.png)\
+the Pico should pop up as a drive like this.
 
-![](micropython_setup_screenshots/select_micropython.png)
+![](micropython_setup_screenshots/select_micropython.png)\
+Press install MicroPython for the backend.
 
-![](micropython_setup_screenshots/install_micropython.png)
+![](micropython_setup_screenshots/install_micropython.png)\
+Select appropriate version.
 
--   Or can drag the [MicroPython .uf2 file](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html) onto the RPI-RP2 drive manually
+(Or you can drag the [MicroPython .uf2 file](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html) onto the RPI-RP2 drive manually)
 
 7.  The Pico reboots.
 
@@ -213,9 +186,9 @@ Sources:
 -   Ohms law : **V = I R**
 ![](images/led_circuit.png)
 \$R = \frac{V_s - V_f}{I_f}$\
-- V_s = 3.3 V (out from Pico)
-- V_f ≈ 2 V (for LED - I just searched it up)
-- I_f ≈ 20 mA (for LED - I just searched it up)\
+- $V_s$ = 3.3 V (out from Pico)
+- $V_f$ ≈ 2 V (for LED - I just searched it up)
+- $I_f$ ≈ 20 mA (for LED - I just searched it up)\
 --> $R = \frac{3.3 - 2}{0.02}$ = 65 Ohm \
 we choose closest available value (I used 100 ohms)
 
