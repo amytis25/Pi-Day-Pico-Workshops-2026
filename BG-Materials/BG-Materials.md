@@ -39,7 +39,7 @@
 
 # Workshop
 
-![](media/image3.png)
+
 
 ## What is a Microcontroller?
 
@@ -49,6 +49,7 @@
 
 ### What are the elements of a microcontroller?
 
+![](images/key-microcontroller-components.png)
 The core elements that make up a microcontroller are the central
 processing unit (CPU), memory and I/O peripherals.
 
