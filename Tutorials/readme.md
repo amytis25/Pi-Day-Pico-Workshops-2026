@@ -1,7 +1,10 @@
 # Pico Beginner Tutorials
-
-![](pico_pinout.png)
+<p align="center">
+  <img src="pico_pinout.png" alt="pico_pinout.png">
+</p>
+<p style="text-align: center;">
 Raspberry Pi Pico Board Pinout 
+</p>
 
 -   Wire up the LED to a GPIO pin
     -   Write a program that blinks LED
