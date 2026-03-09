@@ -160,9 +160,9 @@ Sources:
 | Pico 2 | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | ❌ |
 | Pico 2 W | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | Wi-Fi + Bluetooth |
 
-![](images/pico-img.png)
+<img src="images/pico-img.png" alt="pico/ pico w image" width="200" />
 
-![](images/pico-2-img.png)
+<img src="images/pico-2-img.png" alt="pico/ pico w image" width="200" />
 
 Sources:
 
@@ -213,17 +213,17 @@ Sources:
 
 -   Ohms law : **V = I R**
 ![](images/led_circuit.png)
-$R = \frac{V_s - V_f}{I_f}$
+\$R = \frac{V_s - V_f}{I_f}$\
 - V_s = 3.3 V (out from Pico)
 - V_f ≈ 2 V (for LED - I just searched it up)
-- I_f ≈ 20 mA (for LED - I just searched it up)
---> R = 65 Ohm 
+- I_f ≈ 20 mA (for LED - I just searched it up)\
+--> $R = \frac{3.3 - 2}{0.02}$ = 65 Ohm \
 we choose closest available value (I used 100 ohms)
 
-## Pull-up and Pull-down Resistors
+### Pull-up and Pull-down Resistors
 - buttons with gpio
 
-## Voltage Divider
+### Voltage Divider
 - photoresistor reading ADC requires it
 
 Sources:
