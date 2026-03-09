@@ -184,7 +184,8 @@ Select appropriate version.
 ## Electronic Basics
 
 -   Ohms law : **V = I R**
-![](images/led_circuit.png)\
+
+![](images/led_circuit.png)
 
 \$R = \frac{V_s - V_f}{I_f}$
 
