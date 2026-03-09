@@ -18,10 +18,8 @@
 -   Generally designed to run a single basic programme repeatedly
 
 ## What are the elements of a microcontroller?
-<div style="text-align: center;">
-![](images/key-microcontroller-components.png)
-<div style="text-align: center;">
 
+![](images/key-microcontroller-components.png)\
 The core elements that make up a microcontroller are the central
 processing unit (CPU), memory and I/O peripherals.
 
@@ -64,7 +62,6 @@ Sources:
 
 ## Microcontroller vs. Computers (OS systems) vs. Single Board Computers (OS systems)
 
-<div style="text-align: center;">
 | **Microprocessor (MPU)** | **Microcontroller (MCU)** | **Single Board Computer (SBC)** |
 |---|---|---|
 | The heart of a computer system | The heart of an embedded system | Microcomputer |
@@ -84,7 +81,7 @@ Sources:
 | **Cost** | Very affordable, typically priced between £2 and £20. | More expensive, starting around £30 and going well over £100 depending on specifications. | Much more expensive |
 | **Pros** | - Extremely low power consumption<br>- Affordable and widely available<br>- Great for real-time control and simple tasks | - Powerful processing and multitasking<br>- Runs full operating systems<br>- Ideal for networking and advanced projects | |
 | **Cons** | - Limited processing power<br>- No operating system<br>- Not suitable for complex applications | - Higher power requirements<br>- More expensive<br>- Overkill for simple tasks | |
-</div>
+
 Bare Metal Concept: eliminates the intermediary layers of operating systems, allowing developers to interact directly with the hardware.
 
 -   Pros:
@@ -121,7 +118,7 @@ Sources:
 ### Raspberry Pi Pico versions:
 
 **H extension** - means that the pins are already soldered
-<div style="text-align: center;">
+
 | **Pico** | **Pico W** (were using this) | **Pico 2** | **Pico 2 W** |
 |---|---|---|---|
 | - RP2040 microcontroller<br>- Dual-core ARM Cortex-M0+<br>- 133 MHz CPU<br>- 264 KB SRAM<br>- 2 MB flash<br>- 26 GPIO pins<br>- ADC, PWM, I²C, SPI, UART | Pico +<br>- 2.4 GHz Wi-Fi<br>- Bluetooth support<br>- Infineon CYW43439 radio chip | Pico + improved performance:<br>- dual **Cortex-M33 cores** (or RISC-V cores)<br>- **150 MHz clock**<br>- **520 KB RAM (≈2× more)**<br>- **4 MB flash**<br>- more PWM and PIO capability<br>- improved security (TrustZone) | Pico 2 +<br>- RP2350 microcontroller<br>- Wi-Fi 802.11n<br>- Bluetooth 5.2<br>- same pinout as previous Pico boards |
@@ -135,7 +132,7 @@ Sources:
 | Pico 2 W | RP2350 | Dual Cortex-M33 or RISC-V @ 150 MHz | 520 KB | 4 MB | Wi-Fi + Bluetooth |
 
 <img src="images/pico-img.png" alt="pico/ pico w image" height="200"> <img src="images/pico-2-img.png" alt="pico/ pico w image" height="200" />
-</div>
+
 Sources:
 
 -   [https://www.rapidonline.com/news/microcontrollers-vs-sbcs](https://www.rapidonline.com/news/microcontrollers-vs-sbcs)
@@ -143,7 +140,7 @@ Sources:
 -   [https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
 
 ## Micropython vs. C
-<div style="text-align: center;">
+
 | **Feature** | **MicroPython** | **C/C++ (Pico SDK)** |
 |---|---|---|
 | Ease of Use | High (Interpreted, REPL support) | Moderate (Requires compilation) |
@@ -151,7 +148,7 @@ Sources:
 | Performance | Sufficient for most DIY/IoT | Maximum (up to 250x faster) |
 | Control | High-level abstraction | Direct register/hardware access |
 | Debugging | Print statements / REPL | SWD / Debug probes / GDB |
-</div>
+
 ## Software Setup
 
 1.  Install Thonny IDE from: [https://thonny.org/](https://thonny.org/)
@@ -165,7 +162,7 @@ Sources:
 5.  Plug the Pico into USB.
 
 6.  Flash with Thonny
-<div style="text-align: center;">
+
 ![](micropython_setup_screenshots/pico_as_drive.png)\
 the Pico should pop up as a drive like this.
 
@@ -174,7 +171,7 @@ Press install MicroPython for the backend.
 
 ![](micropython_setup_screenshots/install_micropython.png)\
 Select appropriate version.
-</div>
+
 (Or you can drag the [MicroPython .uf2 file](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html) onto the RPI-RP2 drive manually)
 
 7.  The Pico reboots.
