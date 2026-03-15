@@ -1,3 +1,9 @@
+"""
+Reaction Timer Game
+Tests user reaction time by measuring how quickly a button is pressed
+after an LED turns on. Demonstrates timing, random delays, and button input.
+"""
+
 import time
 import machine
 import random

@@ -1,3 +1,9 @@
+"""
+Button Control Example
+Demonstrates both pull-down and pull-up button configurations
+controlling separate LEDs (green and red).
+"""
+
 import machine
 import time
 
@@ -8,11 +14,13 @@ button_pullup = machine.Pin(16, machine.Pin.IN, machine.Pin.PULL_UP)
 while True:
     if not button_pulldown.value():
         green_led.value(0)
+        print ("pulldown button pressed")
     else:
         green_led.value(1)
 
     if not button_pullup.value():
         red_led.value(1)
+        print ("pullup button pressed")
     else:
         red_led.value(0)
 

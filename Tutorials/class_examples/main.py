@@ -1,3 +1,10 @@
+"""
+Main Program - Class-Based Example
+Demonstrates integrated control of LEDs, buttons, and LDR sensor
+using object-oriented classes with interrupt-driven button handling.
+(just kinda my little playing around example)
+"""
+
 import time
 import machine
 from interrupt_button import Button_pulldown
