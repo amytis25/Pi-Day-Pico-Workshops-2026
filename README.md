@@ -25,7 +25,7 @@ Hands-on Tutorial
 
 | Demo Board Layout |
 |-------|
-| !(Presentation/images/demo-board.jpeg) | 
+| ![](Presentation/images/demo-board.jpeg) | 
 
 
 
