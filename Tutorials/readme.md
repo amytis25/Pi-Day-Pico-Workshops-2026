@@ -2,12 +2,14 @@
 
 # Hands-On Tutorials
 ---
+
 <p align="center">
   <img src="images/pico_pinout.png" alt="pico_pinout.png">
 </p>
 <p style="text-align: center;">
 Raspberry Pi Pico Board Pinout 
 </p>
+
 ---
 
 ## Blink LED
@@ -16,7 +18,7 @@ Raspberry Pi Pico Board Pinout
 - Write a MicroPython program to blink the LED  
 - Play with blink timing  
 
-![LED Circuit Diagram](images/led_circuit.png)
+![LED Circuit Diagram](images/LED_circuit.png)
 
 **Suggested Circuit**
 
@@ -37,7 +39,7 @@ Raspberry Pi Pico Board Pinout
 
 ### Pull-Up and Pull-down Configuration
 
-![Pull-Up Circuit](images/button-resistor-configs.png)
+![Pull-Up Circuit](images/button-resistor-configs.jpg)
 
 - Pull-up default state: **1**
 - Pull-down default state: **0**
@@ -68,7 +70,7 @@ Write a program that:
 
 - **Bonus:** Add a **manual button override** and experiment!
 
-## Resources
+# Resources
 [Quick reference for the RP2](https://docs.micropython.org/en/latest/rp2/quickref.html)\
 [MicroPython libraries](https://docs.micropython.org/en/latest/library/index.html)\
 [machine — functions related to the hardware](https://docs.micropython.org/en/latest/library/machine.html)\
