@@ -1,5 +1,4 @@
 # Pico Beginner Workshop
-This repository will serve as the resource center for Pico Beginner workshop hosted on March 13/2026 as a part of Pi Day with the Engineering Science Student Society (ESSS).
 
 ## Outline
 **Back Ground Materials**
@@ -26,6 +25,12 @@ Hands-on Tutorial
 | Demo Board Layout |
 |-------|
 | ![](Presentation/images/demo-board.jpeg) | 
+
+### Workshop: Pi Day Raspberry Pi Pico Workshop (with the ESSS)
+**Location:** SECB 1014, SFU Burnaby Campus
+**Participants:** 8 students
+**Duration:** ~2 hours
+**Covered:** Outline 1-9
 
 
 ## Common Beginner Problems
