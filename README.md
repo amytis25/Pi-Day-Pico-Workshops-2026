@@ -27,5 +27,25 @@ Hands-on Tutorial
 |-------|
 | ![](Presentation/images/demo-board.jpeg) | 
 
+### Common Beginner Problems
+
+1. Pico stuck in weird state
+→ unplug and replug
+
+2. Wrong pin numbering
+→ use GP numbers, not board pin numbers
+
+3. sleep() missing argument
+→ LED only blinks once
+
+4. Button not powered
+→ add pull-up or pull-down resistor
+
+5. Breadboard rows misunderstood
+→ check electrical connections
+
+6. Wiring errors
+→ verify LED polarity and resistor placement
+
 
 
