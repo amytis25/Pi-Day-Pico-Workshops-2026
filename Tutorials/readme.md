@@ -3,7 +3,7 @@
 # Hands-On Tutorials
 ---
 <p align="center">
-  <img src="pico_pinout.png" alt="pico_pinout.png">
+  <img src="images/pico_pinout.png" alt="pico_pinout.png">
 </p>
 <p style="text-align: center;">
 Raspberry Pi Pico Board Pinout 
